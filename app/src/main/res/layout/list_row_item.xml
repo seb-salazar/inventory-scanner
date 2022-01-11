@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:id="@+id/list_row_item_thumbnail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingLeft="9dp"
+        android:text="Default Name"
+        android:id="@+id/list_row_item_name"
+        android:layout_toEndOf="@+id/list_row_item_thumbnail"
+        android:layout_toRightOf="@+id/list_row_item_thumbnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="9dp"
+        android:text="Barcode"
+        android:paddingTop="6dp"
+        android:id="@+id/list_row_item_number"
+        android:layout_below="@+id/list_row_item_name"
+        android:layout_toRightOf="@+id/list_row_item_thumbnail" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="9dp"
+        android:text="-1"
+        android:paddingTop="6dp"
+        android:id="@+id/list_row_item_amount"
+        android:layout_below="@+id/list_row_item_number"
+        android:layout_toRightOf="@+id/list_row_item_thumbnail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_alignParentRight="true"
+        android:id="@+id/list_row_item_btn"/>
+
+
+</RelativeLayout>
+
+
